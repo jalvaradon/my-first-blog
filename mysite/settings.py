@@ -25,7 +25,7 @@ SECRET_KEY = 'c5%1#97671d30)ktozk3n5@beumu5$ihg!(de5=j-prtx9y#8^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','<jmalvarado>.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','jmalvarado.pythonanywhere.com']
 
 
 # Application definition
