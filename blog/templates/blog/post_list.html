@@ -11,10 +11,14 @@
 			<h2> <em> En donde escribirá todas sus ideas </em> </h2>
 			<h3> Y un resumen de los hallazgos de investigaciones </h3>
 		</div>
-		<div>
-    		<p>Publicado el 18 de marzo de 2018</p>
-    		<h3> <a href=""> La canción del año </a> </h3>
-    		<p>La Canción del año es sobre el caso de un burro enfermo</p>
-    	</div>
+
+		{% for post in posts %}
+			
+			<div>
+    			<p> published: {{ post.published_date }} </p>
+    			<h1><a href="">{{ post.title }}</a></h1>
+    			<p> {{ post.text|linebreaksbr }}</p>
+    		</div>
+    	{% endfor %}
     </body>
 </html>
